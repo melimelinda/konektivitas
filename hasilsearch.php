@@ -3,7 +3,7 @@
 	$cari =$_POST['cari'];
 	$conn =mysqli_connect("localhost","root","");
 	mysqli_select_db("daftartamu",$conn);
-	$hasil=mysqli_query("select * from bukutsmu where $kolom like '%$cari%'", $conn);
+	$hasil=mysqli_query("select * from bukutamu where $kolom like '%$cari%'", $conn);
 	echo "<br>";
 	echo "Ditemukan : $jumlah";
 	echo "<br>";
