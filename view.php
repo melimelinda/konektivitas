@@ -1,12 +1,12 @@
 <?php 
 	$conn = mysqli_connect("localhost","root","");
-	mysql_select_db("daftartamu",$conn);
-	$hasil =mysql_query("select * from bukutamu",$conn);
-	$jumlah = mysql_num_rows($hasil);
+	mysqli_select_db("daftartamu",$conn);
+	$hasil =mysqli_query("select * from bukutamu",$conn);
+	$jumlah = mysqli_num_rows($hasil);
 	echo "<center>Daftar pengunjung</center>";
 	echo "jumlah pengunjung : $jumlah";
 	$a=1;
-	while($baris = mysql_fetch_array($hasil))
+	while($baris = mysqli_fetch_array($hasil))
 	{
 		echo "<br>";
 		echo $a;

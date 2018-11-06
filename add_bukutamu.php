@@ -10,7 +10,7 @@
 		$email =$_POST["email"];
 		$komentar =$_POST["komentar"];
 		$conn=mysqli_connect("localhost","root","") or die ("koneksi gagal");
-		mysql_select_db("daftartamu",$conn);
+		mysqli_select_db("daftartamu",$conn);
 		echo "Nama : $nama<br>";
 		echo "email : $email<br>";
 		echo "Komentar : $komentar<br>";

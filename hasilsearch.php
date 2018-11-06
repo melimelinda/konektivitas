@@ -7,7 +7,7 @@
 	echo "<br>";
 	echo "Ditemukan : $jumlah";
 	echo "<br>";
-	while ($baris=mysql_fetch_array($hasil))
+	while ($baris=mysqli_fetch_array($hasil))
 	{
 		echo "Nama : ";
 		echo $baris[0];
